@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'DancingScript';
+  src: url('DancingScript-Regular.otf');
+}
+
+h1{
+  font-family: "DancingScript", Georgia, Sherif;
+  font-size: 2em;
+  color: white;
+  margin-left: 15px;
+  margin-top: 10px;
+  text-shadow: 1px 1px 2px #02010a;
+
+}
+header{
+  width: auto;
+  background-color: #5b7989;
+  border-radius: 10px 10px 0 0;
+  display: block;	
+
+}
+
+#banner nav {
+    font-family: "DancingScript", Georgia, Sherif;
+		font-size: 1.286em; 	/* 18px */
+		height: 40px;
+		line-height: 30px;
+    margin-right: 0;
+    margin-bottom: 0;
+		padding: 0;
+		text-align: right;
+		width: auto;
+  }
+
+	#banner nav ul {
+    list-style: none;
+    margin: 0 auto;
+    width: auto;
+  }
+
+	#banner nav li {
+    float: right;
+    display: inline;
+    margin: 0;
+  }
+
+  #banner nav a:link, #banner nav a:visited {
+    display: inline-block;
+    height: 30px;
+    padding: 5px 1.5em;
+    text-decoration: none;
+    color: white;
+    border-color: black solid;
+    text-shadow: 1px;
+  }
+
+
+#imagenP{
+   
+   background-color: #82c3a6;
+   
+}
+
+#imagenP img{
+ width: 800px;
+ Display: Block;
+ margin: auto;
+ padding: 30px;
+ 
+}
+
+img[class*="bloque"]{
+    flex:1 2 40%
+    flex-direction: column;
+    padding: 20px;
+    margin-left: 10px;
+   	
+}
+
+#imagenS{
+   Display: flex;
+   background-color: #d5c75f;
+
+}
+
+footer{
+  border-radius: 0 0 10px 10px;
+  display: block;
+  background-color: #C6d5c5;
+  height: 120px;
+  
+}
