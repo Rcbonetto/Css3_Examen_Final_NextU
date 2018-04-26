@@ -3,26 +3,26 @@
   src: url('DancingScript-Regular.otf');
 }
 
-h1{
-  font-family: "DancingScript", Georgia, Sherif;
-  font-size: 2em;
-  color: white;
-  margin-left: 15px;
-  margin-top: 10px;
-  text-shadow: 1px 1px 2px #02010a;
-
-}
 header{
   width: auto;
   background-color: #5b7989;
   border-radius: 10px 10px 0 0;
-  display: block;	
+  display: block;
+  font-size: 18px;
+}
 
+h1{
+  font-family: "DancingScript", Georgia, Verdana;
+  font-size: 2em;            /* 36px */
+  color: white;
+  margin-left: 15px;
+  margin-top: 10px;
+  text-shadow: 1px 1px 2px #02010a;
 }
 
 #banner nav {
-    font-family: "DancingScript", Georgia, Sherif;
-		font-size: 1.286em; 	/* 18px */
+    font-family: "DancingScript", Georgia, Verdana;
+		font-size: 1.25em; 	/* 22.5px */
 		height: 40px;
 		line-height: 30px;
     margin-right: 0;
@@ -30,21 +30,21 @@ header{
 		padding: 0;
 		text-align: right;
 		width: auto;
-  }
+}
 
-	#banner nav ul {
+#banner nav ul {
     list-style: none;
     margin: 0 auto;
     width: auto;
-  }
+}
 
-	#banner nav li {
+#banner nav li {
     float: right;
     display: inline;
     margin: 0;
-  }
+}
 
-  #banner nav a:link, #banner nav a:visited {
+#banner nav a:link, #banner nav a:visited {
     display: inline-block;
     height: 30px;
     padding: 5px 1.5em;
@@ -52,41 +52,128 @@ header{
     color: white;
     border-color: black solid;
     text-shadow: 1px;
-  }
-
+}
 
 #imagenP{
-   
-   background-color: #82c3a6;
-   
+    background-color: #82c3a6;
+    width: auto;
+    Display: Block;
+    margin: auto;
+    padding: 3% 8% 3% 8%;
 }
 
-#imagenP img{
- width: 800px;
- Display: Block;
- margin: auto;
- padding: 30px;
- 
-}
-
-img[class*="bloque"]{
-    flex:1 2 40%
-    flex-direction: column;
-    padding: 20px;
-    margin-left: 10px;
-   	
+img[class^="imageP"]{
+    width: 100%;
 }
 
 #imagenS{
    Display: flex;
    background-color: #d5c75f;
+   width: 100%;
+}
 
+.bloque1:hover{
+    transform: rotate(10deg);
+}
+
+.bloque1{
+    transition-property: transform-rotate;
+    transition-duration: 2s;
+}
+
+.bloque1{
+   width: 43%;
+   height: 47%;
+   float:left;
+   margin-left: auto;
+   margin-top: 22px;
+   margin-bottom: 10px;
+   border: 2px;
+   border-style: solid;
+   border-color: lime;
+   flex: 0 0 40%;
+   box-shadow: #82c3a6;
+   transition: 2s;
+}
+
+.bloque2{
+   width: 35%;
+   height: 34%;
+   float: right;
+   margin: 0 auto;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   border: 1px;
+   border-style: solid;
+   border-color: lime;
+   flex: 0 0 40%;
 }
 
 footer{
   border-radius: 0 0 10px 10px;
-  display: block;
   background-color: #C6d5c5;
-  height: 120px;
-  
+  height: auto;
+  width: 100%;
+}
+
+.contener {
+	display: flex;
+	flex-direction: row;
+}
+
+#piepagina .contener > div {
+	text-align: center;
+	padding: 10px;
+	width: 25%;
+	margin: 10px;
+}
+
+.caja1{
+  margin: 2px;
+  padding: 2px 0 2px 2px;
+  background: -moz-linear-gradient(left, #BADFBC, #5CA861);
+  background: -webkit-linear-gradient(left, #BADFBC, #5CA861);
+  background: -o-linear-gradient(left, #BADFBC, #5CA861);
+  background: linear-gradient(left, #BADFBC, #5CA861);
+}
+
+.caja2{
+  background: -moz-linear-gradient(right, #BADFBC, #5CA861);
+  background: -webkit-linear-gradient(right, #BADFBC, #5CA861);
+  background: -o-linear-gradient(right, #BADFBC, #5CA861);
+  background: linear-gradient(right, #BADFBC, #5CA861);
+}
+
+.caja3{
+  text-shadow: 1px 2px 3px red;
+  background: -moz-linear-gradient(left, #BADFBC, #5CA861);
+  background: -webkit-linear-gradient(left, #BADFBC, #5CA861);
+  background: -o-linear-gradient(left, #BADFBC, #5CA861);
+  background: linear-gradient(left, #BADFBC, #5CA861);
+}
+
+.caja4{
+    background: -moz-linear-gradient(right, #BADFBC, #5CA861);
+    background: -webkit-linear-gradient(right, #BADFBC, #5CA861);
+    background: -o-linear-gradient(right, #BADFBC, #5CA861);
+    background: linear-gradient(right, #BADFBC, #5CA861);
+}
+
+#piepagina .contener > img {
+
+}
+
+#icono1{
+  width: 20%;
+  border-radius: 10px;
+}
+
+#icono2{
+  width: 23%;
+  border-radius: 10px;
+}
+
+#icono3{
+  width: 20%;
+  border-radius: 10px;
 }
