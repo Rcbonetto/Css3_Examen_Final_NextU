@@ -21,92 +21,109 @@ h1{
 }
 
 #banner nav {
-    font-family: "DancingScript", Georgia, Verdana;
-		font-size: 1.25em; 	/* 22.5px */
-		height: 40px;
-		line-height: 30px;
-    margin-right: 0;
-    margin-bottom: 0;
-		padding: 0;
-		text-align: right;
-		width: auto;
+  font-family: "DancingScript", Georgia, Verdana;
+  font-size: 1.25em; 	/* 22.5px */
+  height: 40px;
+  line-height: 30px;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding: 0;
+  text-align: right;
+  width: auto;
 }
 
 #banner nav ul {
-    list-style: none;
-    margin: 0 auto;
-    width: auto;
+  list-style: none;
+  margin: 0 auto;
+  width: auto;
 }
 
 #banner nav li {
-    float: right;
-    display: inline;
-    margin: 0;
+  float: right;
+  display: inline;
+  margin: 0;
 }
 
 #banner nav a:link, #banner nav a:visited {
-    display: inline-block;
-    height: 30px;
-    padding: 5px 1.5em;
-    text-decoration: none;
-    color: white;
-    border-color: black solid;
-    text-shadow: 1px;
+  display: inline-block;
+  height: 30px;
+  padding: 5px 1.5em;
+  text-decoration: none;
+  color: white;
+  border-color: black solid;
+  text-shadow: 1px;
 }
 
 #imagenP{
-    background-color: #82c3a6;
-    width: auto;
-    Display: Block;
-    margin: auto;
-    padding: 3% 8% 3% 8%;
+  background-color: #82c3a6;
+  width: auto;
+  Display: Block;
+  margin: auto;
+  padding: 3% 8% 3% 8%;
 }
 
 img[class^="imageP"]{
-    width: 100%;
+  width: 100%;
 }
 
 #imagenS{
-   Display: flex;
-   background-color: #d5c75f;
-   width: 100%;
+  Display: flex;
+  background-color: #d5c75f;
+  width: 100%;
+  height: auto;
 }
 
 .bloque1:hover{
-    transform: rotate(10deg);
+  transform: rotate(10deg);
+  border: 2px;
+  border-style: solid;
+  border-color: black;
 }
 
 .bloque1{
-    transition-property: transform-rotate;
-    transition-duration: 2s;
+  transition-property: transform-rotate;
+  transition-duration: 2s;
 }
 
 .bloque1{
-   width: 43%;
-   height: 47%;
-   float:left;
-   margin-left: auto;
-   margin-top: 22px;
-   margin-bottom: 10px;
-   border: 2px;
-   border-style: solid;
-   border-color: lime;
-   flex: 0 0 40%;
-   box-shadow: #82c3a6;
-   transition: 2s;
+  width: 33%;
+  height: 37%;
+  float:left;
+  margin-left: auto;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border: 1px;
+  border-style: solid;
+  border-color: lime;
+  flex: 0 0 40%;
+  box-shadow: #82c3a6;
+  transition: 2s;
+}
+
+.bloque2:hover{
+  transform: translate(5px, -20px);
+  border: 2px;
+  border-style: solid;
+  border-color: black;
 }
 
 .bloque2{
-   width: 35%;
-   height: 34%;
-   float: right;
-   margin: 0 auto;
-   margin-top: 10px;
-   margin-bottom: 10px;
-   border: 1px;
-   border-style: solid;
-   border-color: lime;
-   flex: 0 0 40%;
+  transition-property: transform-translate;
+  transition-duration: 2s;
+}
+
+.bloque2{
+  width: 35%;
+  height: 34%;
+  float: right;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px;
+  border-style: solid;
+  border-color: lime;
+  flex: 0 0 40%;
+  transition: 2s;
 }
 
 footer{
@@ -117,15 +134,15 @@ footer{
 }
 
 .contener {
-	display: flex;
-	flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 #piepagina .contener > div {
-	text-align: center;
-	padding: 10px;
-	width: 25%;
-	margin: 10px;
+  text-align: center;
+  padding: 10px;
+  width: 25%;
+  margin: 10px;
 }
 
 .caja1{
@@ -144,6 +161,16 @@ footer{
   background: linear-gradient(right, #BADFBC, #5CA861);
 }
 
+.caja3 img:hover{
+  filter: drop-shadow(2px 2px 4px blue);
+
+}
+
+.caja3 img{
+  transition-property: filter:drop-shadow;
+  transition-duration: 1s;
+}
+
 .caja3{
   text-shadow: 1px 2px 3px red;
   background: -moz-linear-gradient(left, #BADFBC, #5CA861);
@@ -153,27 +180,255 @@ footer{
 }
 
 .caja4{
-    background: -moz-linear-gradient(right, #BADFBC, #5CA861);
-    background: -webkit-linear-gradient(right, #BADFBC, #5CA861);
-    background: -o-linear-gradient(right, #BADFBC, #5CA861);
-    background: linear-gradient(right, #BADFBC, #5CA861);
+  background: -moz-linear-gradient(right, #BADFBC, #5CA861);
+  background: -webkit-linear-gradient(right, #BADFBC, #5CA861);
+  background: -o-linear-gradient(right, #BADFBC, #5CA861);
+  background: linear-gradient(right, #BADFBC, #5CA861);
 }
 
-#piepagina .contener > img {
-
-}
 
 #icono1{
-  width: 20%;
+  width: 15%;
   border-radius: 10px;
+  transition: 1s;
 }
 
 #icono2{
-  width: 23%;
+  width: 18%;
   border-radius: 10px;
+  transition: 1s;
 }
 
 #icono3{
-  width: 20%;
+  width: 15%;
   border-radius: 10px;
+  transition: 1s;
+}
+
+
+
+/**Media Querie de Impresi�n - Solo funciona en Hoja A4**/
+
+@media print{
+  #imagenP{
+    width: 60%;
+}
+  header{
+    height: 33px;
+}
+  #banner nav{
+  opacity: 0;
+}
+  header h1{
+  font-Size: 1.50em; /** 27px **/
+}
+}
+
+
+@media all and (max-width: 800px) and (min-width: 599px){
+  header{
+    width: 100%;
+
+}
+  h1{
+   font-size: 2em;            /* 36px */
+}
+  #banner nav{
+   font-size: 1em;            /* 18px */
+   height: 40px;
+}
+
+#banner nav ul{
+    float: left;
+    display: inline;
+    margin: 0;
+  }
+
+  #imagenP{
+    width: auto;
+
+}
+  #imagenS{
+  Display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  width: 100%;
+  height: auto;
+}
+ .bloque1{
+    width: 60%;
+    order: 1;
+    margin-left: 20%;
+}
+  .bloque2{
+    width: 60%;
+    order: 2;
+
+}
+  .contener {
+    Display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    width: auto;
+}
+
+#piepagina .contener > div {
+  text-align: center;
+  padding: 1px;
+  margin: 2px 11px 2px 2px;
+}
+.caja1{
+  flex-basis: 26%;
+  font-size: 0.70em;
+}
+ .caja2{
+   flex-basis: 40%;
+   font-size: 0.70em;
+}
+ .caja3{
+   flex-basis: 26%;
+   font-size: 0.80em;
+}
+ .caja4{
+   flex-basis: 100%;
+   font-size: 0.70em;
+   border-radius: 0 0 10px 10px;
+}
+}
+
+
+@media all and (max-width: 598px) and (min-width: 420px){
+  header{
+    width: 100%;
+}
+  h1{
+   font-size: 1em;            /* 13.50px */
+}
+  #banner nav{
+    width: 100%;
+    font-size: 0.80em;            /* 9px */
+}
+#banner nav ul{
+    display: inline;
+    margin: 0;
+    float: left;
+}
+
+  #imagenP{
+    width: 84%;
+}
+ #imagenS{
+  Display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  width: 100%;
+  height: auto;
+}
+
+.contener{
+  text-align: center;
+  padding: 1px;
+  margin: 2px;
+}
+
+ .bloque1{
+    width: 40%;
+    order: 1;
+    margin-left: 30%;
+}
+  .bloque2{
+    width: 40%;
+    order: 2;
+}
+.contener {
+  Display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  width: 100%;
+}
+.caja1{
+  order: 1;
+  flex-basis: 100%;
+}
+.caja2{
+  order: 2;
+  flex-basis: 100%;
+}
+.caja3{
+  width: 50%;
+  order: 3;
+  flex-basis: 40%;
+}
+.caja4{
+  width: 50%;
+  order: 4;
+  flex-basis: 40%;
+}
+}
+
+@media all and (max-width: 419px) and (min-width: 320px){
+  header{
+    width: 100%;
+}
+  h1{
+   font-size: 0.75em;            /* 13.50px */
+}
+  #banner nav{
+    width: 100%;
+    font-size: 0.50em;            /* 9px */
+}
+#banner nav ul{
+    display: inline;
+    margin: 0;
+    float: left;
+}
+
+  #imagenP{
+    width: 84%;
+}
+ #imagenS{
+  Display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  width: 100%;
+  height: auto;
+}
+
+.contener{
+  text-align: center;
+  padding: 1px;
+  margin: 2px;
+}
+
+ .bloque1{
+    width: 40%;
+    order: 1;
+    margin-left: 30%;
+}
+  .bloque2{
+    width: 40%;
+    order: 2;
+}
+.contener {
+  Display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  width: 100%;
+}
+.caja1{
+  order: 1;
+  flex-basis: 100%;
+}
+.caja2{
+  order: 2;
+  flex-basis: 100%;
+}
+.caja3{
+  order: 3;
+  flex-basis: 100%;
+}
+.caja4{
+  order: 4;
+  flex-basis: 100%;
+}
 }
