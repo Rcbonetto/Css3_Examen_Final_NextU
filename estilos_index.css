@@ -326,6 +326,10 @@ footer{
 }
 
 .contener{
+  Display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  width: 100%;
   text-align: center;
   padding: 1px;
   margin: 2px;
@@ -340,12 +344,7 @@ footer{
     width: 40%;
     order: 2;
 }
-.contener {
-  Display: flex;
-  flex-direction: row;
-  flex-flow: row wrap;
-  width: 100%;
-}
+
 .caja1{
   order: 1;
   flex-basis: 100%;
@@ -366,7 +365,7 @@ footer{
 }
 }
 
-@media all and (max-width: 419px) and (min-width: 320px){
+@media all and (max-width: 419px) and (min-width: 320px) {
   header{
     width: 100%;
 }
@@ -395,6 +394,10 @@ footer{
 }
 
 .contener{
+  Display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  width: 100%;
   text-align: center;
   padding: 1px;
   margin: 2px;
@@ -409,6 +412,76 @@ footer{
     width: 40%;
     order: 2;
 }
+
+.caja1{
+  order: 1;
+  flex-basis: 100%;
+}
+.caja2{
+  order: 2;
+  flex-basis: 100%;
+}
+.caja3{
+  order: 3;
+  flex-basis: 100%;
+}
+.caja4{
+  order: 4;
+  flex-basis: 100%;
+}
+}
+
+@media all and (max-width: 319px) and (min-width: 180px) {
+  header{
+    width: 100%;
+    height: 60%;
+}
+  h1{
+   font-size: 0.75em;            /* 13.50px */
+}
+
+#banner nav{
+    width: 60%;
+    font-size: 0.50em;            /* 9px */
+}
+#banner nav ul{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul> li> a[href="#"]{
+  opacity: 0;
+}
+
+#imagenP{
+    width: 84%;
+}
+
+ #imagenS{
+  Display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  width: 100%;
+  height: auto;
+}
+
+.contener{
+  text-align: center;
+  padding: 1px;
+  margin: 2px;
+}
+
+ .bloque1{
+    width: 80%;
+    order: 1;
+    margin-left: 11%;
+}
+  .bloque2{
+    width: 80%;
+    order: 2;
+}
 .contener {
   Display: flex;
   flex-direction: row;
@@ -419,6 +492,11 @@ footer{
   order: 1;
   flex-basis: 100%;
 }
+
+div> p> a[href="mailto:robertobonetto@hotmail.com"]{
+  font-size: 0.75em;
+}
+
 .caja2{
   order: 2;
   flex-basis: 100%;

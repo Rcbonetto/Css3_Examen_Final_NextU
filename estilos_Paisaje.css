@@ -1,0 +1,459 @@
+
+#imagenCba{
+  background-color: rgb(166, 73, 101);
+}
+
+.contenido{
+  Display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  flex: inline-flex;
+  padding: 1%;
+}
+
+#image1{
+  float: left;
+  width: 30%;
+  height: 30%;
+  margin: 1% 1% 1% 2%;
+  filter: blur(10px);
+}
+
+#image2{
+  width: 30%;
+  height: 30%;
+  margin: 1%;
+}
+
+#image3{
+  float: right;
+  width: 30%;
+  height: 30%;
+  margin: 1%;
+  filter: sepia(90%);
+}
+
+#image4{
+  float: left;
+  width: 30%;
+  height: 30%;
+    margin: 1% 1% 1% 2%;
+}
+
+#image5{
+  width: 30%;
+  height: 30%;
+  margin: 1%;
+}
+
+#image6{
+  float: right;
+  width: 30%;
+  height: 30%;
+  margin: 1%;
+}
+
+img[class^="par"]{
+  filter: grayscale(100%);
+}
+
+/**Media Querie de Impresi�n - Solo funciona en Hoja A4**/
+
+@media print{
+  .contenido{
+    width: 60%;
+}
+  header{
+    height: 33px;
+}
+  #banner nav{
+  opacity: 0;
+}
+  header h1{
+  font-Size: 1.50em; /** 27px **/
+}
+}
+
+
+@media all and (max-width: 800px) and (min-width: 599px){
+  header{
+    width: 100%;
+
+}
+  h1{
+   font-size: 2em;            /* 36px */
+}
+  #banner nav{
+   font-size: 1em;            /* 18px */
+   height: 40px;
+}
+
+#banner nav ul{
+    float: left;
+    display: inline;
+    margin: 0;
+  }
+
+  .contenido{
+  width: 100%;
+  height: auto;
+}
+#image1{
+  float: left;
+  width: 30%;
+  height: 30%;
+  margin: 1% 1% 1% 2%;
+}
+
+#image2{
+  width: 30%;
+  height: 30%;
+  margin: 1%;
+}
+
+#image3{
+  float: right;
+  width: 30%;
+  height: 30%;
+  margin: 1%;
+}
+
+#image4{
+  float: left;
+  width: 30%;
+  height: 30%;
+    margin: 1% 1% 1% 2%;
+}
+
+#image5{
+  width: 30%;
+  height: 30%;
+  margin: 1%;
+}
+
+#image6{
+  float: right;
+  width: 30%;
+  height: 30%;
+  margin: 1%;
+}
+
+/* Footer */
+  .contener {
+    Display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    width: auto;
+}
+
+#piepagina .contener > div {
+  text-align: center;
+  padding: 1px;
+  margin: 2px 11px 2px 2px;
+}
+.caja1{
+  flex-basis: 26%;
+  font-size: 0.70em;
+}
+ .caja2{
+   flex-basis: 40%;
+   font-size: 0.70em;
+}
+ .caja3{
+   flex-basis: 26%;
+   font-size: 0.80em;
+}
+ .caja4{
+   flex-basis: 100%;
+   font-size: 0.70em;
+   border-radius: 0 0 10px 10px;
+}
+}
+
+
+@media all and (max-width: 598px) and (min-width: 420px){
+  header{
+    width: 100%;
+}
+  h1{
+   font-size: 1em;            /* 13.50px */
+}
+  #banner nav{
+    width: 100%;
+    font-size: 0.80em;            /* 9px */
+}
+#banner nav ul{
+    display: inline;
+    margin: 0;
+    float: left;
+}
+
+.contenido{
+width: 100%;
+height: auto;
+}
+
+#image1{
+float: left;
+width: 45%;
+height: 45%;
+margin: 1% 1% 1% 2%;
+}
+
+#image2{
+width: 45%;
+height: 45%;
+margin: 1%;
+}
+
+#image3{
+float: right;
+width: 45%;
+height: 45%;
+margin: 1%;
+}
+
+#image4{
+float: left;
+width: 45%;
+height: 45%;
+  margin: 1% 1% 1% 2%;
+}
+
+#image5{
+width: 45%;
+height: 45%;
+margin: 1%;
+}
+
+#image6{
+float: right;
+width: 45%;
+height: 45%;
+margin: 1%;
+}
+
+/*footer*/
+.contener {
+  Display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  width: 100%;
+  text-align: center;
+  padding: 1px;
+  margin: 2px;
+}
+
+ .bloque1{
+    width: 40%;
+    order: 1;
+    margin-left: 30%;
+}
+  .bloque2{
+    width: 40%;
+    order: 2;
+}
+
+.caja1{
+  order: 1;
+  flex-basis: 100%;
+}
+.caja2{
+  order: 2;
+  flex-basis: 100%;
+}
+.caja3{
+  width: 50%;
+  order: 3;
+  flex-basis: 40%;
+}
+.caja4{
+  width: 50%;
+  order: 4;
+  flex-basis: 40%;
+}
+}
+
+@media all and (max-width: 419px) and (min-width: 320px){
+  header{
+    width: 100%;
+}
+  h1{
+   font-size: 0.75em;            /* 13.50px */
+}
+  #banner nav{
+    width: 100%;
+    font-size: 0.50em;            /* 9px */
+}
+#banner nav ul{
+    display: inline;
+    margin: 0;
+    float: left;
+}
+
+.contenido{
+width: 100%;
+height: auto;
+flex-direction: column;
+}
+
+#image1{
+width: 55%;
+height: 55%;
+order: 1;
+margin-left: 22.5%;
+}
+
+#image2{
+width: 55%;
+height: 55%;
+order: 2;
+margin-left: 22.5%;
+}
+
+#image3{
+width: 55%;
+height: 55%;
+order: 3;
+margin-left: 22.5%;
+}
+
+#image4{
+width: 55%;
+height: 55%;
+order: 4;
+margin-left: 22.5%;
+}
+
+#image5{
+  width: 55%;
+  height: 55%;
+  order: 5;
+  margin-left: 22.5%;
+}
+
+#image6{
+width: 55%;
+height: 55%;
+order: 6;
+margin-left: 22.5%;
+}
+
+/*footer*/
+.contener {
+  Display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  width: 100%;
+}
+.caja1{
+  order: 1;
+  width: 100%;
+}
+.caja2{
+  order: 2;
+  width: 100%;
+}
+.caja3{
+  order: 3;
+  flex-basis: 100%;
+}
+.caja4{
+  order: 4;
+  flex-basis: 100%;
+}
+}
+
+@media all and (max-width: 319px) and (min-width: 180px){
+  header{
+    width: 100%;
+}
+  h1{
+   font-size: 0.75em;            /* 13.50px */
+}
+  #banner nav{
+    width: 100%;
+    font-size: 0.50em;            /* 9px */
+}
+#banner nav ul{
+    display: inline;
+    margin: 0;
+    float: left;
+}
+
+.contenido{
+width: 100%;
+height: auto;
+flex-direction: column;
+}
+
+#image1{
+width: 70%;
+height: 70%;
+order: 1;
+margin-left: 15%;
+}
+
+#image2{
+width: 70%;
+height: 70%;
+order: 2;
+margin-left: 15%;
+}
+
+#image3{
+width: 70%;
+height: 70%;
+order: 3;
+margin-left: 15%;
+}
+
+#image4{
+width: 70%;
+height: 70%;
+order: 4;
+margin-left: 15%;
+}
+
+#image5{
+  width: 70%;
+  height: 70%;
+  order: 5;
+  margin-left: 15%;
+}
+
+#image6{
+width: 70%;
+height: 70%;
+order: 6;
+margin-left: 15%;
+}
+
+/*footer*/
+.contener {
+  Display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  width: 100%;
+}
+.caja1{
+  order: 1;
+  flex-basis: 100%;
+}
+div> p> a[href="mailto:robertobonetto@hotmail.com"]{
+  font-size: 0.75em;
+}
+
+.caja2{
+  order: 2;
+  flex-basis: 100%;
+}
+.caja3{
+  order: 3;
+  flex-basis: 100%;
+}
+.caja4{
+  order: 4;
+  flex-basis: 100%;
+}
+}

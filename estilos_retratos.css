@@ -1,0 +1,12 @@
+
+#imagenrostro{
+  background-color: rgb(250, 145, 0);
+}
+
+.contenido{
+  Display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  flex: inline-flex;
+  padding: 1%;
+}
