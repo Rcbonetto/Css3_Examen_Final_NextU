@@ -1,3 +1,18 @@
+@-webkit-keyframes slidein{
+    0%{
+      margin-top: 150%;
+    }
+    60%{
+      margin-top: -5%;
+    }
+    100%{
+      margin-top: 0%;
+    }
+}
+
+header[class^="cuerpo"]{
+    animation: slidein 3s;
+}
 
 #imagenCba{
   background-color: rgb(166, 73, 101);
@@ -37,7 +52,7 @@
   float: left;
   width: 30%;
   height: 30%;
-    margin: 1% 1% 1% 2%;
+  margin: 1% 1% 1% 2%;
 }
 
 #image5{
@@ -56,6 +71,19 @@
 img[class^="par"]{
   filter: grayscale(100%);
 }
+
+#textopaisaje{
+  text-align: center;
+  font-family: DancingScript;
+  font-size: 1.5em;
+  color: white;
+  text-decoration: underline;
+  padding: 0 0 1% 0;
+  text-shadow: 1px 1px 2px #02010a;
+
+
+}
+
 
 /**Media Querie de Impresi�n - Solo funciona en Hoja A4**/
 
@@ -428,6 +456,8 @@ height: 70%;
 order: 6;
 margin-left: 15%;
 }
+
+
 
 /*footer*/
 .contener {

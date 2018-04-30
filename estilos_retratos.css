@@ -3,10 +3,11 @@
   background-color: rgb(250, 145, 0);
 }
 
-.contenido{
-  Display: flex;
-  flex-direction: row;
-  flex-flow: row wrap;
-  flex: inline-flex;
-  padding: 1%;
-}
+#textoretrato{
+  text-align: center;
+  font-family: DancingScript;
+  font-size: 1.5em;
+  color: white;
+  text-decoration: underline;
+  padding: 0 0 1% 0;
+  text-shadow: 1px 1px 2px #02010a;
